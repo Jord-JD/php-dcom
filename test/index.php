@@ -2,7 +2,7 @@
 
 require 'vendor/autoload.php';
 
-use \DivineOmega\DCOM\DCOM;
+use \JordJD\DCOM\DCOM;
 
 // mysqli
 

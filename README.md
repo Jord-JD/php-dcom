@@ -40,7 +40,7 @@ single connection to each database per request.
 ```php
 require 'vendor/autoload.php';
 
-use \DivineOmega\DCOM\DCOM;
+use \JordJD\DCOM\DCOM;
 
 $mysqli = DCOM::getConnection("main");
 ```

@@ -1,6 +1,6 @@
 <?php
 
-namespace DivineOmega\DCOM;
+namespace JordJD\DCOM;
 
 use Exception;
 
