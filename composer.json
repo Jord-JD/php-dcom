@@ -1,16 +1,32 @@
 {
-    "name": "divineomega/php-dcom",
-    "type": "library",
-    "description": "PHP Database Connection Object Manager",
-    "keywords": ["database connections", "database", "mysqli", "pdo", "PHP", "PHP library", "database connection PHP library"],
-    "homepage": "https://github.com/DivineOmega/php-dcom",
-    "license": "LGPL-3.0-only",
-    "require": {
-        "php": ">=5.5.9"
-    },
-    "autoload": {
-        "psr-4": {
-            "DivineOmega\\DCOM\\": "src/"
-        }
+  "name": "jord-jd/php-dcom",
+  "type": "library",
+  "description": "PHP Database Connection Object Manager",
+  "keywords": [
+    "database connections",
+    "database",
+    "mysqli",
+    "pdo",
+    "PHP",
+    "PHP library",
+    "database connection PHP library"
+  ],
+  "homepage": "https://github.com/Jord-JD/php-dcom",
+  "license": "LGPL-3.0-only",
+  "require": {
+    "php": ">=5.5.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "DivineOmega\\DCOM\\": "src/"
     }
+  },
+  "replace": {
+    "divineomega/php-dcom": "self.version"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "2.0-dev"
+    }
+  }
 }
