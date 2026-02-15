@@ -1,6 +1,5 @@
 {
-
     "require": {
-        "DivineOmega/php-dcom": "1.*"
+        "jord-jd/php-dcom": "^3.0"
     }
 }
