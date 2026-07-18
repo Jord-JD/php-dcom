@@ -49,6 +49,27 @@ Note that the connection name passed to the `getConnection` method matches
 what is defined in the `.env` file. You can therefore change this argument in
 order to manage and connect to multiple databases easily.
 
+## Exceptions
+
+All package exceptions extend `JordJD\DCOM\Exceptions\DCOMException`, so callers
+can catch the base class or handle a specific condition:
+
+- `MissingEnvironmentVariableException`
+- `InvalidObjectTypeException`
+- `UnsupportedDatabaseTypeException`
+- `DriverUnavailableException`
+- `ConnectionException`
+
+```php
+use JordJD\DCOM\Exceptions\ConnectionException;
+
+try {
+    $connection = DCOM::getConnection('main');
+} catch (ConnectionException $exception) {
+    // Handle a failed database connection.
+}
+```
+
 ## Example
 
 For an actual example of how to use PHP DCOM, see the [`test` directory](test/).
